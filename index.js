@@ -1,18 +1,18 @@
-/*
-let students = {};
+
+/*let students = {};
 let name;
 let age;
 
 for (let i = 0; i < 3; i++) {
-   name = prompt();
-   age = prompt();
+   name = prompt("name");
+   age = prompt("age");
    students[i] = { name: name, age: age };
 }
 
 for (let i = 0; i < 3; i++) {
    console.log(students[i]);
-}
-*/
+}*/
+
 
 /*
 function cout(text_one, text_two) {
@@ -21,7 +21,7 @@ function cout(text_one, text_two) {
 
 cout("hello", "world");
 
-*/
+* /
 /*
 function num(a = 5, b = 5) {
    console.log(a + b);
@@ -142,3 +142,4 @@ function test(n) {
 
 test(5);
 */
+
