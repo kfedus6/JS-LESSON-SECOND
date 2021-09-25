@@ -1,15 +1,15 @@
-
-/*let students = {};
+/*
+let students = {};
 let name;
 let age;
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 2; i++) {
    name = prompt("name");
    age = prompt("age");
    students[i] = { name: name, age: age };
 }
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 2; i++) {
    console.log(students[i]);
 }*/
 
@@ -142,4 +142,33 @@ function test(n) {
 
 test(5);
 */
+let contacts = [{ name: "kolya", phone: "0636800022" }];
+let name;
+let phone;
 
+function cont() {
+   for (let c of contacts) {
+      console.log(c);
+   }
+};
+
+function addCont() {
+   for (let i = 0; i < 2; i++) {
+      name = prompt("name");
+      phone = prompt("phone");
+      contacts[i] = { name: name, phone: phone };
+   }
+   for (let i = 0; i < 2; i++) {
+      console.log(contacts[i]);
+   }
+}
+
+if (confirm("Посмотреть список контактов?") === true) {
+   cont();
+} else if (confirm("Добавить новый контакт?") === true) {
+   addCont();
+} else if (confirm("Выйти?") === false) {
+
+} else {
+   alert("paka");
+}
