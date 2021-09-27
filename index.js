@@ -158,17 +158,23 @@ function addCont() {
       phone = prompt("phone");
       contacts[i] = { name: name, phone: phone };
    }
-   for (let i = 0; i < 2; i++) {
+   for (let i = 0; i < 1; i++) {
       console.log(contacts[i]);
    }
 }
-
-if (confirm("Посмотреть список контактов?") === true) {
-   cont();
-} else if (confirm("Добавить новый контакт?") === true) {
-   addCont();
-} else if (confirm("Выйти?") === false) {
-
-} else {
-   alert("paka");
+var question;
+function showMenu() {
+   do {
+      if (confirm("Посмотреть список контактов?") === true) {
+         cont();
+      } else if (confirm("Добавить новый контакт?") === true) {
+         addCont();
+      } else if (question = confirm("Выйти?") === false) {
+      } else {
+         alert("ви вийшли");
+      }
+      question
+   } while (question == true)
 }
+showMenu();
+
