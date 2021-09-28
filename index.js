@@ -180,8 +180,6 @@ function showMenu() {
 }
 showMenu();
 */
-
-
 /*
 function cont() {
    for (let c of contacts) {
@@ -221,7 +219,6 @@ do {
                item.Age = age;
             }
          }
-
          break;
       }
       case 4: {
@@ -237,6 +234,7 @@ do {
 } while (!exit)
 */
 
+//фібоначі
 /*
 function getFibonachi(n) {
    if (n === 0) {
@@ -252,10 +250,12 @@ function getFibonachi(n) {
    }
 }
 
+
 var result = getFibonachi(8);
 console.log(result);
-
-
+*/
+//факторіал
+/*
 function factorial(n) {
 
    if (n === 1) {
@@ -268,15 +268,14 @@ function factorial(n) {
 
 console.log(factorial(5)) // 120   - 1*2*3*4*5
 */
-
 /*
 function sumPlusOne() {
-   let x = 0;
-   function tmp() {
-      x++;
-      console.log(x)
-   }
-   return tmp;
+let x = 0;
+function tmp() {
+   x++;
+   console.log(x)
+}
+return tmp;
 }
 
 let fn = sumPlusOne();
@@ -286,7 +285,7 @@ fn();
 fn();
 fn();
 */
-
+/*
 function sum() {
    let v = 0;
    function qw() {
@@ -300,20 +299,18 @@ let result = sum();
 result();
 result();
 result();
-
+*/
 /*
-
 function multiply(n) {
    var x = n;
    return function (m) {
       return x * m;
    };
 }
-
-
 var res = multiply(4)(6);
 console.log(res);
-
+*/
+/*
 function mul(s) {
    let c = s;
    return function (z) {
