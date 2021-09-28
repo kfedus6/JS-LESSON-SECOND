@@ -142,6 +142,7 @@ function test(n) {
 
 test(5);
 */
+/*
 let contacts = [{ name: "kolya", phone: "0636800022" }];
 let name;
 let phone;
@@ -162,7 +163,8 @@ function addCont() {
       console.log(contacts[i]);
    }
 }
-var question;
+let menu1;
+let question;
 function showMenu() {
    do {
       if (confirm("Посмотреть список контактов?") === true) {
@@ -177,4 +179,148 @@ function showMenu() {
    } while (question == true)
 }
 showMenu();
+*/
 
+
+/*
+function cont() {
+   for (let c of contacts) {
+      console.log(c);
+   }
+};
+
+let name, age;
+
+let contacts = [""];
+let exit = false;
+let menu;
+
+
+do {
+   menu = parseInt(prompt())
+
+   switch (menu) {
+      case 1: {
+         cont();
+         break;
+      }
+      case 2: {
+         name = prompt("Имя");
+         age = parseInt(prompt("Возраст"))
+         contacts[contacts.length] = { Name: name, Age: age }
+         break;
+      }
+      case 3: {
+         name = prompt("Введите имя, кого хотите изменить");
+
+         for (item of contacts) {
+            if (item.Name == name) {
+               name = prompt("Новое имя: ");
+               age = parseInt(prompt("Возраст: "));
+               item.Name = name;
+               item.Age = age;
+            }
+         }
+
+         break;
+      }
+      case 4: {
+         exit = true;
+         break;
+      }
+      default: {
+         console.log("error");
+         break;
+      }
+   }
+
+} while (!exit)
+*/
+
+/*
+function getFibonachi(n) {
+   if (n === 0) {
+      return 0;
+   }
+
+   else if (n === 1) {
+      return 1;
+   }
+
+   else {
+      return getFibonachi(n - 1) + getFibonachi(n - 2);
+   }
+}
+
+var result = getFibonachi(8);
+console.log(result);
+
+
+function factorial(n) {
+
+   if (n === 1) {
+      return 1;
+   }
+   else {
+      return n * factorial(n - 1);
+   }
+}
+
+console.log(factorial(5)) // 120   - 1*2*3*4*5
+*/
+
+/*
+function sumPlusOne() {
+   let x = 0;
+   function tmp() {
+      x++;
+      console.log(x)
+   }
+   return tmp;
+}
+
+let fn = sumPlusOne();
+
+fn();
+fn();
+fn();
+fn();
+*/
+
+function sum() {
+   let v = 0;
+   function qw() {
+      v++;
+      console.log(v ** 3)
+   }
+   return qw;
+}
+
+let result = sum();
+result();
+result();
+result();
+
+/*
+
+function multiply(n) {
+   var x = n;
+   return function (m) {
+      return x * m;
+   };
+}
+
+
+var res = multiply(4)(6);
+console.log(res);
+
+function mul(s) {
+   let c = s;
+   return function (z) {
+      return c / z;
+   };
+}
+
+let result = mul(10)(2);
+console.log(result);
+*/
