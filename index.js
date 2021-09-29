@@ -250,7 +250,6 @@ function getFibonachi(n) {
    }
 }
 
-
 var result = getFibonachi(8);
 console.log(result);
 */
@@ -265,21 +264,24 @@ function factorial(n) {
       return n * factorial(n - 1);
    }
 }
-
 console.log(factorial(5)) // 120   - 1*2*3*4*5
+
+function factorial1(n) {
+   return n <= 1 ? 1 : n * factorial1(n - 1);
+}
+console.log(factorial1(5));
 */
 /*
 function sumPlusOne() {
-let x = 0;
-function tmp() {
-   x++;
-   console.log(x)
-}
-return tmp;
+   let x = 0;
+   function tmp() {
+      x++;
+      console.log(x)
+   }
+   return tmp;
 }
 
 let fn = sumPlusOne();
-
 fn();
 fn();
 fn();
@@ -294,7 +296,6 @@ function sum() {
    }
    return qw;
 }
-
 let result = sum();
 result();
 result();
@@ -321,3 +322,23 @@ function mul(s) {
 let result = mul(10)(2);
 console.log(result);
 */
+//ДЗ 
+/*
+function addTo(n) {
+   if (n == 1) {
+      return 1;
+   }
+   return n + addTo(n - 1);
+}
+console.log(addTo(10));
+
+function powerNo(n, m) {
+   if (m == 1) {
+      return n;
+   } else {
+      return n * powerNo(n, m - 1);
+   }
+}
+console.log(powerNo(3, 2));
+*/
+
