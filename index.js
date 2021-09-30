@@ -303,24 +303,23 @@ result();
 */
 /*
 function multiply(n) {
-   var x = n;
    return function (m) {
-      return x * m;
+      return n * m;
    };
 }
-var res = multiply(4)(6);
+var res = multiply(10)(2);
 console.log(res);
 */
 /*
 function mul(s) {
-   let c = s;
+   let c = 0;
    return function (z) {
-      return c / z;
+      c = s / z;
+      console.log(c);
    };
 }
-
-let result = mul(10)(2);
-console.log(result);
+let result = mul(10);
+result(2);
 */
 //ДЗ 
 /*
@@ -340,5 +339,15 @@ function powerNo(n, m) {
    }
 }
 console.log(powerNo(3, 2));
+*/
+/*
+function display(a) {
+   let dis = '';
+   return function (b) {
+      dis = a + b;
+      console.log(dis + "!!!")
+   }
+}
+display("Hello ")("World ");
 */
 
