@@ -351,3 +351,122 @@ function display(a) {
 display("Hello ")("World ");
 */
 
+/*
+let array = [23, 324, 123, 324, 2, 354, 341, 657, -33, 56, 35, 546, 65, 4, 35, 655, 563, -234, 34, -34, -624, 543, -65];
+
+function bubbleSort(array) {
+   for (let n = 0; n < array.length; n++) {
+      for (let i = 0; i < array.length - 1 - n; i++) {
+         if (array[i] > array[i + 1]) {
+            let buff = array[i];
+            array[i] = array[i + 1];
+            array[i + 1] = buff;
+         }
+      }
+   }
+   console.log(array);
+}
+bubbleSort(array);
+*/
+
+
+/*
+let foo = (function () {
+   let obj = { d: "hello", s: "2222" };
+
+   return {
+      display: function (text) {
+         console.log(text + obj.d + obj.s);
+      }
+   }
+
+})();
+
+console.log(foo)
+
+foo.display("world ");
+*/
+
+
+/*
+let x = function f() {
+   let obj = { num: 2 }
+   return {
+      display: function () {
+         console.log("obj=" + obj.num);
+      },
+      sumPlusOne: function () {
+         obj.num += 1;
+      }
+   }
+}()
+
+x.display();
+x.sumPlusOne();
+x.display();
+x.sumPlusOne();
+x.sumPlusOne();
+x.sumPlusOne();
+x.display();
+*/
+
+/*
+let calculator = function () {
+   let num = { num: 0 }
+   return {
+      sum: function (a) {
+         num.num += a;
+      },
+      result: function () {
+         console.log(num.num)
+      },
+      sub: function (a) {
+         num.num -= a
+      }
+   }
+}()
+/*
+calculator.sum(5)
+calculator.sum(7)
+calculator.result()
+
+
+calculator.sum(10);
+calculator.sum(3);
+calculator.result() // 13
+calculator.sub(2)
+calculator.result() // 11
+*/
+
+/*
+function display() {
+   console.log("Hi");
+   display = function () {
+      console.log("by");
+      display = function () {
+         console.log("test");
+      }
+   }
+}
+
+function crazy(n1, n2) {
+   console.log(n1 + n2);
+   crazy = function (n1, n2) {
+      console.log(n1 * n2);
+      crazy = function (n1, n2) {
+         console.log(n1 / n2);
+         crazy = function (n1, n2) {
+            console.log(n1 - n2);
+         }
+      }
+   }
+
+
+}
+
+
+crazy(2, 4);  //6
+crazy(6, 6); //36
+crazy(10, 2); //5
+crazy(10, 5); // 5
+*/
